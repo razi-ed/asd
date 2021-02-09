@@ -1,0 +1,44 @@
+{
+  "compilerOptions": {
+    "jsx": "react",
+    "checkJs": true,
+    "resolveJsonModule": true,
+    "moduleResolution": "node",
+    "target": "es2020",
+    "module": "es2020",
+    "paths": {
+      "react-dom/*": [
+        "@hot-loader/react-dom/*"
+      ],
+      "@tidings/*": [
+        "src/*"
+      ],
+      "@tidings-shared/*": [
+        "src/shared/*"
+      ],
+      "@tidings-elements/*": [
+        "src/shared/components/*"
+      ],
+      "@tidings-modules/*": [
+        "src/modules/*"
+      ]
+    },
+    "baseUrl": "./"
+  },
+  "exclude": [
+    "dist",
+    "node_modules",
+    "build",
+    ".vscode",
+    "coverage",
+    "jspm_packages",
+    "tmp",
+    "temp",
+    "bower_components",
+    ".npm",
+    ".yarn"
+  ],
+  "typeAcquisition": {
+    "enable": true
+  }
+}
